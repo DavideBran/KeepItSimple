@@ -11,10 +11,3 @@ services:
     environment:
       - PYTHONPATH=/app
     restart: unless-stopped
-
-  portainer:
-    image: portainer/portainer-ce
-    container_name: portainer
-    restart: unless-stopped
-    ports:
-      - "9000:9000"
