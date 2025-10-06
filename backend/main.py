@@ -8,10 +8,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Start debugpy server
+debugpy.listen(("0.0.0.0", 5678))
 
 logger.info("Debugpy server started on port 5678")
-debugpy.listn(("0.0.0.0", 5678))
-
 
 app = FastAPI()
 
