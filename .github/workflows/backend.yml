@@ -62,7 +62,7 @@ jobs:
           pip install -r requirements.txt
           pip install mypy ruff
         
-      - name: Run Ruff check
+      - name: Run ruff 
         working-directory: 'backend'
         run: ruff check .
 
