@@ -32,7 +32,7 @@ jobs:
           pip install -r requirements.txt
           pip install ruff
 
-      - name: Lint code with Ruff
+      - name: Lint Code
         run: ruff check --output-format=github --target-version=py39
       
       - name: Check code formatting with Ruff
